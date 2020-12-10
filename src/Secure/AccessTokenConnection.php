@@ -10,12 +10,12 @@ use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Psr7\Request;
-use SnelstartPHP\Utils;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use SnelstartPHP\Exception\SnelstartApiAccessDeniedException;
 use SnelstartPHP\Secure\BearerToken\BearerTokenInterface;
+use SnelstartPHP\Utils;
 
 final class AccessTokenConnection implements ConnectionInterface
 {

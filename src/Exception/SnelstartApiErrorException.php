@@ -31,14 +31,14 @@ final class SnelstartApiErrorException extends \RuntimeException
                 $errorMessages[] = sprintf("%s: %s", $bodyErrorItem["errorCode"], $bodyErrorItem["message"]);
             }
 
-            return new static(implode("\n", $errorMessages), 400);
+            return new SnelstartApiErrorException(implode("\n", $errorMessages), 400);
         }
 
         // Inconsistent...
         if (isset($body["Message"]) || isset($body["message"])) {
-            return new static($body["Message"] ?? $body["message"], 400);
+            return new SnelstartApiErrorException($body["Message"] ?? $body["message"], 400);
         }
 
-        throw new static("Unknown exception. Message body: " . \json_encode($body), 400);
+        throw new SnelstartApiErrorException("Unknown exception. Message body: " . \json_encode($body), 400);
     }
 }

@@ -10,19 +10,17 @@ use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ServerException;
-use SnelstartPHP\Utils;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
-use SnelstartPHP\Exception\{
-    ExpiredAccessTokenException,
+use SnelstartPHP\Exception\{ExpiredAccessTokenException,
     IncompleteRequestException,
     MaxRetriesReachedException,
     RateLimitException,
     SnelstartApiAccessDeniedException,
     SnelstartApiErrorException,
-    SnelstartResourceNotFoundException
-};
+    SnelstartResourceNotFoundException};
+use SnelstartPHP\Utils;
 
 abstract class BaseConnection implements ConnectionInterface
 {

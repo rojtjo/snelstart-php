@@ -1,3 +1,6 @@
+# 2.1
+- BC-BREAK: Removed legacy code from V1 and bumped the version.
+
 # 2.0.4
 - Added support for NaamWaarde fields (please see Model\Relatie) for more information.
 
