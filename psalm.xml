@@ -9,19 +9,10 @@
 >
     <projectFiles>
         <directory name="src" />
-        <ignoreFiles>
-            <directory name="vendor" />
-            <directory name="src/Connector/V1"/>
-            <directory name="src/Mapper/V1"/>
-            <directory name="src/Model/V1"/>
-            <directory name="src/Request/V1"/>
-        </ignoreFiles>
     </projectFiles>
 
     <issueHandlers>
         <LessSpecificReturnType errorLevel="info" />
-
-        <!-- level 3 issues - slightly lazy code writing, but provably low false-negatives -->
 
         <DeprecatedMethod errorLevel="info" />
         <DeprecatedProperty errorLevel="info" />

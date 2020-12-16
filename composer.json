@@ -38,7 +38,9 @@
         "sort-packages": true
     },
     "autoload": {
-        "files": [ "src/deprecated.php" ],
+        "files": [
+            "src/migrate.php"
+        ],
         "psr-4": {
             "SnelstartPHP\\": "src/"
         }

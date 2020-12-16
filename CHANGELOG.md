@@ -1,4 +1,4 @@
-# 2.1
+# 3.0
 - BC-BREAK: Removed legacy code from V1 and bumped the version.
 
 # 2.0.4
